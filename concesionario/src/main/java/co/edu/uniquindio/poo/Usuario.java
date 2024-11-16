@@ -25,7 +25,7 @@ public class Usuario {
      * @param preguntaRecuperacion
      * @param respuestaRecuperacion
      */
-    public Usuario(String nombre, String apellido, String cedula, String telefono, String correo, String direccion,
+    public Usuario(String nombre, String apellido, String cedula, String telefono, String correo,
             String cuenta, String contrasenia, String preguntaRecuperacion, String respuestaRecuperacion) {
         this.nombre = nombre;
         this.apellido = apellido;
