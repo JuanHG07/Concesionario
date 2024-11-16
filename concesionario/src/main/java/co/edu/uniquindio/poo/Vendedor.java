@@ -1,7 +1,10 @@
 package co.edu.uniquindio.poo;
 
+import java.util.LinkedList;
+
 public class Vendedor extends Usuario {
     private String codigoEmpleado;
+    private LinkedList<Transaccion> transacciones;
 
     /**
      * Constructor de la clase Vendedor
@@ -40,6 +43,24 @@ public class Vendedor extends Usuario {
      */
     public void setCodigoEmpleado(String codigoEmpleado) {
         this.codigoEmpleado = codigoEmpleado;
+    }
+
+    /**
+     * Metodo para obtener la lista de transacciones
+     * 
+     * @return la lista de transacciones
+     */
+    public LinkedList<Transaccion> getTransacciones() {
+        return transacciones;
+    }
+
+    /**
+     * Metodo para cambiar la lista de transacciones
+     * 
+     * @param transacciones la nueva lista de transacciones
+     */
+    public void setTransacciones(LinkedList<Transaccion> transacciones) {
+        this.transacciones = transacciones;
     }
 
 }

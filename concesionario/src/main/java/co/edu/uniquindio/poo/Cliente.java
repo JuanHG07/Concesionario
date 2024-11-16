@@ -1,7 +1,10 @@
 package co.edu.uniquindio.poo;
 
+import java.util.LinkedList;
+
 public class Cliente extends Usuario {
     private String direccion;
+    private LinkedList<Transaccion> transacciones;
 
     /**
      * Constructor de la clase Cliente
@@ -14,6 +17,7 @@ public class Cliente extends Usuario {
         super(nombre, apellido, cedula, telefono, correo, cuenta, contrasenia, preguntaRecuperacion,
                 respuestaRecuperacion);
         this.direccion = direccion;
+        transacciones = new LinkedList<>();
     }
 
     /**
@@ -32,6 +36,24 @@ public class Cliente extends Usuario {
      */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    /**
+     * Metodo para obtener la lista de transacciones
+     * 
+     * @return la lista de transacciones
+     */
+    public LinkedList<Transaccion> getTransacciones() {
+        return transacciones;
+    }
+
+    /**
+     * Metodo para cambiar la lista de transacciones
+     * 
+     * @param transacciones la nueva lista de transacciones
+     */
+    public void setTransacciones(LinkedList<Transaccion> transacciones) {
+        this.transacciones = transacciones;
     }
 
 }
