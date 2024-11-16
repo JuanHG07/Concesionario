@@ -25,6 +25,7 @@ public class Vendedor extends Usuario {
         super(nombre, apellido, cedula, telefono, correo, cuenta, contrasenia, preguntaRecuperacion,
                 respuestaRecuperacion);
         this.codigoEmpleado = codigoEmpleado;
+        transacciones = new LinkedList<>();
     }
 
     /**
