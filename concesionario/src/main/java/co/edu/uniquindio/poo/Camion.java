@@ -17,7 +17,7 @@ public class Camion extends Vehiculo {
  * @param modelo            el modelo del camión
  * @param nuevo             indica si el camión es nuevo
  * @param cambios           el número de cambios del camión
- * @param velMaz            la velocidad máxima del camión
+ * @param velMax            la velocidad máxima del camión
  * @param cilindraje        el cilindraje del camión
  * @param capacidadCarga    la capacidad máxima de carga del camión (en toneladas o kilogramos)
  * @param aireAcondicionado indica si el camión tiene aire acondicionado
@@ -26,11 +26,14 @@ public class Camion extends Vehiculo {
  * @param numeroEjes        el número de ejes del camión
  * @param negocio           el negocio asociado al camión
  * @param tipo              el tipo de camion
+ * @param combustion  combustion el tipo de combustion
+ * @param transmision transmision el tipo de transmision
+ * @param estado      estado del vehiculo
  */
-public Camion(String codigo, String marca, String modelo, boolean nuevo, int cambios, double velMaz,
+public Camion(String codigo, String marca, String modelo, boolean nuevo, int cambios, double velMax,
 double cilindraje, double capacidadCarga, boolean aireAcondicionado, boolean frenosAire, boolean abs,
-int numeroEjes, Negocio negocio, TipoCamion tipo) {
-super(codigo, marca, modelo, nuevo, cambios, velMaz, cilindraje, negocio);
+int numeroEjes, Negocio negocio, TipoCamion tipo, Combustion combustion, Transmision transmision, Estado estado) {
+super(codigo, marca, modelo, nuevo, cambios, velMax, cilindraje, negocio, combustion, transmision, estado);
 this.capacidadCarga = capacidadCarga;
 this.aireAcondicionado = aireAcondicionado;
 this.frenosAire = frenosAire;
