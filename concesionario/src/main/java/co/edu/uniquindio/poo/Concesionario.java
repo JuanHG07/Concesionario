@@ -221,6 +221,15 @@ public class Concesionario {
         transacciones.add(transaccion);
     }
 
+    /**
+     * Metodo para obtener una lista de vendedores que realizaron transacciones en
+     * un rango de fechas
+     * 
+     * @param primerFecha  la fecha inicial del rango
+     * @param segundaFecha la fecha final del rango
+     * @return una lista de vendedores cuyas transacciones se realizaron dentro del
+     *         rango de fechas
+     */
     public LinkedList<Vendedor> obtenerVendoresFecha(LocalDate primerFecha, LocalDate segundaFecha) {
         LinkedList<Vendedor> vendedoresList = new LinkedList<>();
         for (Vendedor vendedor : vendedores) {
