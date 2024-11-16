@@ -45,7 +45,7 @@ public class Compra extends Negocio {
      * 
      * @return true si el vehiculo está en revisión, false en caso contrario
      */
-    public boolean isRevisionVehiculo() {
+    public boolean getRevisionVehiculo() {
         return revisionVehiculo;
     }
 
