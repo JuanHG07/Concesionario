@@ -6,7 +6,6 @@ public class Usuario {
     private String cedula;
     private String telefono;
     private String correo;
-    private String direccion;
     private String cuenta;
     private String contrasenia;
     private String preguntaRecuperacion;
@@ -26,14 +25,13 @@ public class Usuario {
      * @param preguntaRecuperacion
      * @param respuestaRecuperacion
      */
-    public Usuario(String nombre, String apellido, String cedula, String telefono, String correo, String direccion,
+    public Usuario(String nombre, String apellido, String cedula, String telefono, String correo,
             String cuenta, String contrasenia, String preguntaRecuperacion, String respuestaRecuperacion) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.telefono = telefono;
         this.correo = correo;
-        this.direccion = direccion;
         this.cuenta = cuenta;
         this.contrasenia = contrasenia;
         this.preguntaRecuperacion = preguntaRecuperacion;
@@ -42,6 +40,7 @@ public class Usuario {
 
     /**
      * Metodo para obtener nombre
+     * 
      * @return el nombre
      */
     public String getNombre() {
@@ -50,6 +49,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar nombre
+     * 
      * @param nombre el nombre
      */
     public void setNombre(String nombre) {
@@ -58,6 +58,7 @@ public class Usuario {
 
     /**
      * Metodo para obtener apellido
+     * 
      * @return el apellido
      */
     public String getApellido() {
@@ -66,6 +67,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar apellido
+     * 
      * @param apellido el apellido
      */
     public void setApellido(String apellido) {
@@ -74,6 +76,7 @@ public class Usuario {
 
     /**
      * Metodo para obtener cedula
+     * 
      * @return la cedula
      */
     public String getCedula() {
@@ -82,6 +85,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar cedula
+     * 
      * @param cedula la cedula
      */
     public void setCedula(String cedula) {
@@ -90,6 +94,7 @@ public class Usuario {
 
     /**
      * Metodo para obtener telefono
+     * 
      * @return el telefono
      */
     public String getTelefono() {
@@ -98,6 +103,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar telefono
+     * 
      * @param telefono el telefono
      */
     public void setTelefono(String telefono) {
@@ -106,6 +112,7 @@ public class Usuario {
 
     /**
      * Metodo para obtener correo
+     * 
      * @return el correo
      */
     public String getCorreo() {
@@ -114,6 +121,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar correo
+     * 
      * @param correo el correo
      */
     public void setCorreo(String correo) {
@@ -121,23 +129,8 @@ public class Usuario {
     }
 
     /**
-     * Metodo para obtener direccion
-     * @return la direccion
-     */
-    public String getDireccion() {
-        return direccion;
-    }
-
-    /**
-     * Metodo para cambiar direccion
-     * @param direccion la direccion
-     */
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    /**
      * Metodo para obtener cuenta
+     * 
      * @return la cuenta
      */
     public String getCuenta() {
@@ -146,6 +139,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar cuenta
+     * 
      * @param cuenta la cuenta
      */
     public void setCuenta(String cuenta) {
@@ -154,6 +148,7 @@ public class Usuario {
 
     /**
      * Metodo para obtener contrasenia
+     * 
      * @return la contrasenia
      */
     public String getContrasenia() {
@@ -162,6 +157,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar contrasenia
+     * 
      * @param contrasenia la contrasenia
      */
     public void setContrasenia(String contrasenia) {
@@ -170,6 +166,7 @@ public class Usuario {
 
     /**
      * Metodo para obtener pregunta de recuperacion
+     * 
      * @return la pregunta de recuperacion
      */
     public String getPreguntaRecuperacion() {
@@ -178,6 +175,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar pregunta de recuperacion
+     * 
      * @param preguntaRecuperacion la pregunta de recuperacion
      */
     public void setPreguntaRecuperacion(String preguntaRecuperacion) {
@@ -186,6 +184,7 @@ public class Usuario {
 
     /**
      * Metodo para obtener respuesta de recuperacion
+     * 
      * @return la respuesta de recuperacion
      */
     public String getRespuestaRecuperacion() {
@@ -194,6 +193,7 @@ public class Usuario {
 
     /**
      * Metodo para cambiar respuesta de recuperacion
+     * 
      * @param respuestaRecuperacion la respuesta de recuperacion
      */
     public void setRespuestaRecuperacion(String respuestaRecuperacion) {
